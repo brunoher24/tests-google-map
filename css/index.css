@@ -1,0 +1,52 @@
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+ #map {
+    height: 400px;
+    width: 90%;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+#countries-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#countries-list li {
+  margin: 10px;
+}
+
+#countries-list button {
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 20px;
+  height: 40px;
+  box-shadow: 1px 1px 4px silver;
+  background-color: transparent;
+}
+
+#countries-list button:hover {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  background-color: #000;
+  color: white;
+}
+
+#countries-list button.selected {
+  background-color: #000;
+  color: white;
+}
